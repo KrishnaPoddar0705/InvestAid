@@ -71,18 +71,18 @@ async function async1(){
 }
 }
 arr = async();
-async function asyncSP500(){
-  var tp = stock[i].trim().toUpperCase();
+// async function asyncSP500(){
+//   var tp = stock[i].trim().toUpperCase();
     
-  async function async(){
-    let arr1 = await self.historicalPrices(5, 7, 2000, "%5EGSPC", '1d')
-     return arr1;
-  }
+//   async function async(){
+//     let arr1 = await self.historicalPrices(5, 7, 2000, "%5EGSPC", '1d')
+//      return arr1;
+//   }
   
-   sp500= await async();
+//    sp500= await async();
   
-  }
-  sp500 =  asyncSP500();
+//   }
+//   sp500 =  asyncSP500();
 //this.state.logReturns
 Promise.all([arr]).then((response)=>{
   if(self.state.logReturns.length != self.state.stocks1.length){return;}
@@ -347,7 +347,7 @@ console.log(response[0].weights[index2])
  var time = [];
  var close = [];
  var open = [];
- var high = [];
+ var high = [];  
  var low = [];
  var volume = [];
   var self = this;
