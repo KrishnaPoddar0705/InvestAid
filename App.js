@@ -5,7 +5,7 @@ import Plot from 'react-plotly.js';
 
 class App extends Component{
   constructor(props) {
-    super(props);
+    super(props);  
     this.state = {
       value: '',
       stocks1:[],
